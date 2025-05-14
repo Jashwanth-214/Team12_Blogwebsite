@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Welcome to the Blog",
+    "date": "2025-04-01",
+    "content": "This is the first post on our static blog!"
+  },
+  {
+    "title": "Another Post",
+    "date": "2025-04-05",
+    "content": "More content coming soon..."
+  },
+  {
+    "title": "New Feature Added",
+    "date": "2025-04-10",
+    "content": "Now you can add blog posts using the form!"
+  },
+  {
+    "title": "April Update",
+    "date": "2025-04-15",
+    "content": "Implemented delete functionality and post clearing."
+  },
+  {
+    "title": "Form Enhancements",
+    "date": "2025-04-20",
+    "content": "Improved the post submission experience with better form design."
+  }
+]
+
