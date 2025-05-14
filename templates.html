@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Static Blog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #5e60ce;
+      color: white;
+      padding: 1.2em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2em;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 2em auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #4a4e69;
+      color: white;
+    }
+    h1, h2 {
+      color: #3a0ca3;
+    }
+    .intro p {
+      font-size: 1.1em;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Blog</h1>
+    <nav>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('blog') }}">Blog</a>
+      <a href="{{ url_for('add_post') }}">Add Post</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <h2>Explore Our Blog</h2>
+      <p>Here you'll find the latest updates and articles on our journey with web development.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 My Static Blog. Created with Flask and ❤️</p>
+  </footer>
+</body>
+</html>
+
