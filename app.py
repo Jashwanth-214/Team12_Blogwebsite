@@ -38,7 +38,7 @@ def api_posts():
     return jsonify(load_posts())
 
 @app.route('/add_post', methods=['GET', 'POST'])
-def add_post():
+def add_post():  //to add post for the bloge
     if request.method == 'POST':
         title = request.form['title']
         content = request.form['content']
