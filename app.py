@@ -3,6 +3,7 @@ import json
 import os
 from datetime import datetime
 
+
 app = Flask(__name__)
 POSTS_FILE = 'posts.json'
 
@@ -10,7 +11,7 @@ def load_posts():
     if os.path.exists(POSTS_FILE):
         with open(POSTS_FILE, 'r') as f:
             return json.load(f)
-    return []
+    return ()
 
 def save_posts(posts):
     with open(POSTS_FILE, 'w') as f:
